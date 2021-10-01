@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.com/">
+      <s:element name="MsgTest">
+        <s:complexType />
+      </s:element>
+      <s:element name="MsgTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MsgTestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBBSTitle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bbsCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBBSTitleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBBSTitleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBBSSearchTitle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bbsCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="searchType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="search" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBBSSearchTitleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBBSSearchTitleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBBSData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bbsCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="docID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBBSDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBBSDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBBSDataCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bbsCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="docID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="empno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBBSDataCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBBSDataCountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGukList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetGukListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGukListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBuList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBuListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBuListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmplList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deptCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmplListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmplListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSearchListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSearchListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="showImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empl_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="showImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="showImageResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="MsgTestSoapIn">
+    <wsdl:part name="parameters" element="tns:MsgTest" />
+  </wsdl:message>
+  <wsdl:message name="MsgTestSoapOut">
+    <wsdl:part name="parameters" element="tns:MsgTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBBSTitleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBBSTitle" />
+  </wsdl:message>
+  <wsdl:message name="GetBBSTitleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBBSTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBBSSearchTitleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBBSSearchTitle" />
+  </wsdl:message>
+  <wsdl:message name="GetBBSSearchTitleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBBSSearchTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBBSDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBBSData" />
+  </wsdl:message>
+  <wsdl:message name="GetBBSDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBBSDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBBSDataCountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBBSDataCount" />
+  </wsdl:message>
+  <wsdl:message name="GetBBSDataCountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBBSDataCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGukListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGukList" />
+  </wsdl:message>
+  <wsdl:message name="GetGukListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGukListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBuListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBuList" />
+  </wsdl:message>
+  <wsdl:message name="GetBuListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBuListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmplListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmplList" />
+  </wsdl:message>
+  <wsdl:message name="GetEmplListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmplListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSearchListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSearchList" />
+  </wsdl:message>
+  <wsdl:message name="GetSearchListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSearchListResponse" />
+  </wsdl:message>
+  <wsdl:message name="showImageSoapIn">
+    <wsdl:part name="parameters" element="tns:showImage" />
+  </wsdl:message>
+  <wsdl:message name="showImageSoapOut">
+    <wsdl:part name="parameters" element="tns:showImageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSISSoap">
+    <wsdl:operation name="MsgTest">
+      <wsdl:input message="tns:MsgTestSoapIn" />
+      <wsdl:output message="tns:MsgTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSTitle">
+      <wsdl:input message="tns:GetBBSTitleSoapIn" />
+      <wsdl:output message="tns:GetBBSTitleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSSearchTitle">
+      <wsdl:input message="tns:GetBBSSearchTitleSoapIn" />
+      <wsdl:output message="tns:GetBBSSearchTitleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSData">
+      <wsdl:input message="tns:GetBBSDataSoapIn" />
+      <wsdl:output message="tns:GetBBSDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSDataCount">
+      <wsdl:input message="tns:GetBBSDataCountSoapIn" />
+      <wsdl:output message="tns:GetBBSDataCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGukList">
+      <wsdl:input message="tns:GetGukListSoapIn" />
+      <wsdl:output message="tns:GetGukListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuList">
+      <wsdl:input message="tns:GetBuListSoapIn" />
+      <wsdl:output message="tns:GetBuListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmplList">
+      <wsdl:input message="tns:GetEmplListSoapIn" />
+      <wsdl:output message="tns:GetEmplListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchList">
+      <wsdl:input message="tns:GetSearchListSoapIn" />
+      <wsdl:output message="tns:GetSearchListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="showImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">사번입력시 byte로 사진 리턴</wsdl:documentation>
+      <wsdl:input message="tns:showImageSoapIn" />
+      <wsdl:output message="tns:showImageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSISSoap" type="tns:WebServiceSISSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MsgTest">
+      <soap:operation soapAction="http://tempuri.com/MsgTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSTitle">
+      <soap:operation soapAction="http://tempuri.com/GetBBSTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSSearchTitle">
+      <soap:operation soapAction="http://tempuri.com/GetBBSSearchTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSData">
+      <soap:operation soapAction="http://tempuri.com/GetBBSData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSDataCount">
+      <soap:operation soapAction="http://tempuri.com/GetBBSDataCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGukList">
+      <soap:operation soapAction="http://tempuri.com/GetGukList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuList">
+      <soap:operation soapAction="http://tempuri.com/GetBuList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmplList">
+      <soap:operation soapAction="http://tempuri.com/GetEmplList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchList">
+      <soap:operation soapAction="http://tempuri.com/GetSearchList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showImage">
+      <soap:operation soapAction="http://tempuri.com/showImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSISSoap12" type="tns:WebServiceSISSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MsgTest">
+      <soap12:operation soapAction="http://tempuri.com/MsgTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSTitle">
+      <soap12:operation soapAction="http://tempuri.com/GetBBSTitle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSSearchTitle">
+      <soap12:operation soapAction="http://tempuri.com/GetBBSSearchTitle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSData">
+      <soap12:operation soapAction="http://tempuri.com/GetBBSData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBBSDataCount">
+      <soap12:operation soapAction="http://tempuri.com/GetBBSDataCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGukList">
+      <soap12:operation soapAction="http://tempuri.com/GetGukList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuList">
+      <soap12:operation soapAction="http://tempuri.com/GetBuList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmplList">
+      <soap12:operation soapAction="http://tempuri.com/GetEmplList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSearchList">
+      <soap12:operation soapAction="http://tempuri.com/GetSearchList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showImage">
+      <soap12:operation soapAction="http://tempuri.com/showImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceSIS">
+    <wsdl:port name="WebServiceSISSoap" binding="tns:WebServiceSISSoap">
+      <soap:address location="http://mgate.seoul.co.kr:8081/WebServiceSIS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSISSoap12" binding="tns:WebServiceSISSoap12">
+      <soap12:address location="http://mgate.seoul.co.kr:8081/WebServiceSIS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
