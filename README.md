@@ -5,7 +5,7 @@
 * 웹서비스 0%
 * DB설계 0%
 
-## 화면 예시 (iOS)
+## 1. 화면 예시 (iOS)
 
 * <b>홈 / 메뉴</b>
 
@@ -26,3 +26,8 @@
 * <b>게시판 새 글 푸시 알림 설정</b>
 
 ![제목 없3음-8](https://user-images.githubusercontent.com/14077108/135579285-7a720f8d-8fff-46a4-8425-2de302ac7f7a.png)
+
+## 2. 기타
+
+* [iOS용 로그인 앱](https://github.com/yeaeun23/ios-login-app)
+* [Android용 로그인 앱](https://github.com/yeaeun23/android-login-app)
