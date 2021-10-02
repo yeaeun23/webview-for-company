@@ -21,7 +21,7 @@
 
 * <b>신문 제작현황</b>
 
-![18](https://user-images.githubusercontent.com/14077108/135579489-3327af73-de30-46c2-8356-a64bc7502bf5.png)
+![제목 없음-7](https://user-images.githubusercontent.com/14077108/135721977-28f90875-e4c9-498e-ab9f-2e736112a426.png)
 
 * <b>게시판 새 글 푸시 알림 설정</b>
 
