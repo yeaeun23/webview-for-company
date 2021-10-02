@@ -19,11 +19,11 @@
 
 ![제목 없음-9](https://user-images.githubusercontent.com/14077108/135578191-b8ae0473-9a27-4fa9-b47d-2bc29c41ba99.png)
 
-* <b>신문 제작현황</b>
+* <b>신문 제작현황 / 상세</b>
 
 ![제목 없음-8](https://user-images.githubusercontent.com/14077108/135722002-12f3cadc-feb7-4531-b1a7-deff8670fcdb.png)
 
-* <b>게시판 새 글 푸시 알림 설정</b>
+* <b>게시판 새글 푸시 알림 설정</b>
 
 ![제목 없3음-8](https://user-images.githubusercontent.com/14077108/135579285-7a720f8d-8fff-46a4-8425-2de302ac7f7a.png)
 
