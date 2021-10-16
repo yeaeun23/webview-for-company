@@ -1,4 +1,4 @@
-# mobile-web
+# webview-for-company
 
 * 개발 100%
 * 디자인 100%
