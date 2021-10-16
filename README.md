@@ -30,6 +30,6 @@
 
 ![제목 없음-8](https://user-images.githubusercontent.com/14077108/135722002-12f3cadc-feb7-4531-b1a7-deff8670fcdb.png)
 
-* <b>게시판 새글 푸시 알림 설정</b>
+* <b>게시판 새글 푸시알림 설정 (on/off)</b>
 
 ![제목 없3음-8](https://user-images.githubusercontent.com/14077108/135579285-7a720f8d-8fff-46a4-8425-2de302ac7f7a.png)
