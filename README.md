@@ -20,7 +20,6 @@
 
 * <b>게시판 / 상세</b>
 
-![제목3 없음-8](https://user-images.githubusercontent.com/14077108/135579193-ff16a44d-60a9-47cf-ba15-123a95902667.png)
 ![135579193-ff16a44d-60a9-47cf-ba15-123a95902667](https://user-images.githubusercontent.com/14077108/155093215-8c8afdaa-6f53-4e72-bc49-759a766101a0.png)
 
 * <b>조직도 / 상세</b>
@@ -29,7 +28,6 @@
 
 * <b>신문 제작현황 / 상세</b>
 
-![제목 없음-8](https://user-images.githubusercontent.com/14077108/135722002-12f3cadc-feb7-4531-b1a7-deff8670fcdb.png)
 ![135722002-12f3cadc-feb7-4531-b1a7-deff8670fcdb](https://user-images.githubusercontent.com/14077108/155093264-602500c7-88eb-4b88-9425-e85b4b51527f.png)
 
 * <b>게시판 새글 푸시알림 설정 (on/off)</b>
